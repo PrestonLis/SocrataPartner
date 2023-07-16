@@ -29,6 +29,9 @@ results_df = pd.DataFrame.from_records(results)
 results_df["url status"] = ""
 results_df["api status"] = ""
 results_df = results_df[["name", "url", "url status", "api_endpoint", "api status"]]
+os.system("CLS")
+print("Beginning Status Check")
+print(f"Current Working Directory: {os.getcwd()}")
 
 with tqdm(total=len(results_df)) as pbar:
     for index, row in results_df.iterrows():
