@@ -23,7 +23,7 @@ password = input("Password: ")
 app_token = input("App Token: ")
 
 client = Socrata("capmanagementllc.partner.socrata.com", app_token=app_token,username=username,password=password)
-results = client.get("9vvb-qwmv", limit=1500)
+results = client.get("9vvb-qwmv", limit=2000)
 results_df = pd.DataFrame.from_records(results)
 
 results_df["url status"] = ""
