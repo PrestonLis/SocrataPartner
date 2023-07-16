@@ -33,4 +33,6 @@ App_token:
 ```
 Will then proceed to load a .csv file in the directory with status codes being scraped, with a progress bar indicating how far into the process you are.
 
+Once finihsed, a .csv will be found in the working folder with all status codes.
+
 
